@@ -1,4 +1,4 @@
-package com.lomovskiy.lifecycle.ui.theme
+package com.lomovskiy.feature.root.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

@@ -1,4 +1,4 @@
-package com.lomovskiy.lifecycle
+package com.lomovskiy.feature.root
 
 import org.junit.Test
 

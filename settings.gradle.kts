@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "lifecycle"
 include(":app")
+include(":feature-root")
