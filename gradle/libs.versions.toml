@@ -1,23 +1,26 @@
 [versions]
-junit = "4.13.2"
-compose-bom = "2024.02.01"
+composeBom = "2024.02.01"
 kotlinCompilerExtensionVersion = "1.5.9"
 agp = "8.2.2"
 kotlin = "1.9.22"
-core-ktx = "1.12.0"
-androidx-test-ext-junit = "1.1.5"
-espresso-core = "3.5.1"
-appcompat = "1.6.1"
-material = "1.11.0"
+androidx-core = "1.12.0"
+androidx-activity = "1.8.2"
+lifecycle-runtime = "2.7.0"
 
 [libraries]
-junit = { module = "junit:junit", version.ref = "junit" }
-compose-bom = { module = "androidx.compose:compose-bom", version.ref = "compose-bom" }
-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
-androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+composeBom = { module = "androidx.compose:compose-bom", version.ref = "composeBom" }
+composeUi-uiTooling = { module = "androidx.compose.ui:ui-tooling" }
+composeUi-uiToolingPreview = { module = "androidx.compose.ui:ui-tooling-preview" }
+composeUi-ui = { module = "androidx.compose.ui:ui" }
+composeUi-uiTestManifest = { module = "androidx.compose.ui:ui-test-manifest" }
+composeUi-uiTestJunit4 = { module = "androidx.compose.ui:ui-test-junit4" }
+composeUi-graphics = { module = "androidx.compose.ui:ui-graphics" }
+composeMaterial3-material3 = { module = "androidx.compose.material3:material3" }
+
+androidxCore-coreKtx = { module = "androidx.core:core-ktx", version.ref = "androidx-core" }
+androidxActivity-activityCompose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activity" }
+androidxLifecycle-lifecycleRuntimeKtx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle-runtime" }
+
 [plugins]
-androidLibrary = { id = "com.android.library", version.ref = "agp" }
+androidApplication = { id = "com.android.application", version.ref = "agp" }
 kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
