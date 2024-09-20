@@ -1,4 +1,5 @@
 [versions]
+java = "8"
 agp = "8.6.1"
 kotlin = "2.0.20"
 coreKtx = "1.13.1"
@@ -36,6 +37,9 @@ androidxRoom-roomCompiler = { group = "androidx.room", name = "room-compiler", v
 comGoogleDagger-hiltAndroid = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
 comGoogleDagger-hiltCompiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
 
+comAndroidToolsBuild-gradle = { module = "com.android.tools.build:gradle", version.ref = "agp" }
+orgJetbrainsKotlin-kotlinGradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+
 [plugins]
 comAndroidApplication = { id = "com.android.application", version.ref = "agp" }
 comAndroidLibrary = { id = "com.android.library", version.ref = "agp" }
@@ -43,4 +47,3 @@ orgJetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref =
 orgJetbrainsKotlinPluginCompose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 comGoogleDevtoolsKsp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 comGoogleDaggerHiltAndroid = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
-
