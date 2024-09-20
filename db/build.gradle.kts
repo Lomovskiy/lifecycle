@@ -1,7 +1,9 @@
 plugins {
-    alias(libs.plugins.comAndroidLibrary)
-    alias(libs.plugins.orgJetbrainsKotlinAndroid)
+    alias(libs.plugins.comAndroidLibrary) apply true
+    alias(libs.plugins.orgJetbrainsKotlinAndroid) apply true
     alias(libs.plugins.comGoogleDevtoolsKsp) apply true
+    alias(libs.plugins.comGoogleDaggerHiltAndroid) apply true
+    id("kotlin-kapt")
 }
 
 android {
@@ -36,6 +38,10 @@ android {
 dependencies {
     implementation(libs.androidxRoom.roomRuntime)
     ksp(libs.androidxRoom.roomCompiler)
+
+    implementation(libs.comGoogleDagger.hiltAndroid)
+    kapt(libs.comGoogleDagger.hiltCompiler)
+
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
