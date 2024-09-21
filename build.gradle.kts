@@ -6,4 +6,5 @@ plugins {
     alias(libs.plugins.orgJetbrainsKotlinPluginCompose) apply false
     alias(libs.plugins.comGoogleDevtoolsKsp) apply false
     alias(libs.plugins.comGoogleDaggerHiltAndroid) apply false
+    id("core")
 }
