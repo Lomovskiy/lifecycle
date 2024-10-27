@@ -1,4 +1,5 @@
 pluginManagement {
+    includeBuild("convention-plugins/base")
     repositories {
         google {
             content {
@@ -23,3 +24,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "lifecycle"
 include(":app")
+include(":feature-transactions")
