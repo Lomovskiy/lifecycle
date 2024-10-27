@@ -10,9 +10,17 @@ activityCompose = "1.9.3"
 composeBom = "2024.10.00"
 navigation = "2.8.3"
 appcompat = "1.7.0"
-material = "1.10.0"
+material = "1.12.0"
+java = "8"
 
 [libraries]
+
+# plugins for composite build
+comAndroidToolsBuild-gradle = { module = "com.android.tools.build:gradle", version.ref = "agp" }
+#orgJetbrainsCompose-composeGradlePlugin = { module = "org.jetbrains.compose:compose-gradle-plugin", version.ref = "compose" }
+#orgJetbrainsKotlin-composeCompilerGradlePlugin = { module = "org.jetbrains.kotlin:compose-compiler-gradle-plugin", version.ref = "compose" }
+orgJetbrainsKotlin-kotlinGradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+
 androidxNavigation-navigationCompose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigation" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
