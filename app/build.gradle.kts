@@ -40,7 +40,7 @@ android {
 }
 
 dependencies {
-
+    implementation(libs.androidxNavigation.navigationCompose)
     implementation(libs.androidxCore.coreKtx)
     implementation(libs.androidxLifecycle.lifecycleRuntimeKtx)
     implementation(libs.androidxActivity.activityCompose)

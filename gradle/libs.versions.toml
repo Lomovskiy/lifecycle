@@ -8,6 +8,7 @@ espressoCore = "3.6.1"
 lifecycleRuntimeKtx = "2.8.7"
 activityCompose = "1.9.3"
 composeBom = "2024.11.00"
+navigation = "2.8.4"
 
 [libraries]
 androidxCore-coreKtx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -24,6 +25,7 @@ androidxComposeUi-uiToolingPreview = { group = "androidx.compose.ui", name = "ui
 androidxComposeUi-uiTestManifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 androidxComposeUi-uiTestJunit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidxComposeMaterial3-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidxNavigation-navigationCompose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigation" }
 
 [plugins]
 comAndroidApplication = { id = "com.android.application", version.ref = "agp" }
