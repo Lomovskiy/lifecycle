@@ -1,17 +1,17 @@
 plugins {
-    alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.comAndroidApplication)
+    alias(libs.plugins.orgJetbrainsKotlinAndroid)
+    alias(libs.plugins.orgJetbrainsKotlinPluginCompose)
 }
 
 android {
     namespace = "ru.lomovskiy.lifecycle"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "ru.lomovskiy.lifecycle"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -41,19 +41,19 @@ android {
 
 dependencies {
 
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.lifecycle.runtime.ktx)
-    implementation(libs.androidx.activity.compose)
-    implementation(platform(libs.androidx.compose.bom))
-    implementation(libs.androidx.ui)
-    implementation(libs.androidx.ui.graphics)
-    implementation(libs.androidx.ui.tooling.preview)
-    implementation(libs.androidx.material3)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
-    androidTestImplementation(platform(libs.androidx.compose.bom))
-    androidTestImplementation(libs.androidx.ui.test.junit4)
-    debugImplementation(libs.androidx.ui.tooling)
-    debugImplementation(libs.androidx.ui.test.manifest)
+    implementation(libs.androidxCore.coreKtx)
+    implementation(libs.androidxLifecycle.lifecycleRuntimeKtx)
+    implementation(libs.androidxActivity.activityCompose)
+    implementation(platform(libs.androidxCompose.composeBom))
+    implementation(libs.androidxUi.ui)
+    implementation(libs.androidxComposeUi.uiGraphics)
+    implementation(libs.androidxComposeUi.uiToolingPreview)
+    implementation(libs.androidxComposeMaterial3.material3)
+    testImplementation(libs.junit.junit)
+    androidTestImplementation(libs.androidxTestExt.junit)
+    androidTestImplementation(libs.androidxTestEspresso.espressoCore)
+    androidTestImplementation(platform(libs.androidxCompose.composeBom))
+    androidTestImplementation(libs.androidxComposeUi.uiTestJunit4)
+    debugImplementation(libs.androidxComposeUi.uiTooling)
+    debugImplementation(libs.androidxComposeUi.uiTestManifest)
 }
