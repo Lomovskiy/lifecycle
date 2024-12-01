@@ -9,6 +9,9 @@ lifecycleRuntimeKtx = "2.8.7"
 activityCompose = "1.9.3"
 composeBom = "2024.11.00"
 navigation = "2.8.4"
+sqlite = "2.4.0"
+room = "2.6.1"
+ksp = "2.1.0-1.0.29"
 
 [libraries]
 androidxCore-coreKtx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -26,9 +29,17 @@ androidxComposeUi-uiTestManifest = { group = "androidx.compose.ui", name = "ui-t
 androidxComposeUi-uiTestJunit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidxComposeMaterial3-material3 = { group = "androidx.compose.material3", name = "material3" }
 androidxNavigation-navigationCompose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigation" }
+androidxSqlite-sqliteKtx = { group = "androidx.sqlite", name = "sqlite-ktx", version.ref = "sqlite" }
+androidxRoom-roomRuntime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+androidxRoom-roomCompiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+androidxRoom-roomKtx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+androidxRoom-roomPaging = { group = "androidx.room", name = "room-paging", version.ref = "room" }
+androidxRoom-roomTesting = { group = "androidx.room", name = "room-testing", version.ref = "room" }
 
 [plugins]
 comAndroidApplication = { id = "com.android.application", version.ref = "agp" }
 orgJetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 orgJetbrainsKotlinPluginCompose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+comGoogleDevtoolsKsp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+androidxRoom = { id = "androidx.room", version.ref = "room" }
 

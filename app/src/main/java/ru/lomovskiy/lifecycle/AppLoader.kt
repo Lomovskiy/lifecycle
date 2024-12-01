@@ -1,6 +1,7 @@
 package ru.lomovskiy.lifecycle
 
 import android.app.Application
+import androidx.room.Room
 
 class AppLoader : Application() {
 

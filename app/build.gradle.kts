@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.comAndroidApplication)
     alias(libs.plugins.orgJetbrainsKotlinAndroid)
     alias(libs.plugins.orgJetbrainsKotlinPluginCompose)
+    alias(libs.plugins.comGoogleDevtoolsKsp)
+    alias(libs.plugins.androidxRoom)
 }
 
 android {
@@ -37,9 +39,21 @@ android {
     buildFeatures {
         compose = true
     }
+
+    room {
+        schemaDirectory("$projectDir/schemas")
+    }
 }
 
 dependencies {
+    implementation(libs.androidxSqlite.sqliteKtx)
+
+    implementation(libs.androidxRoom.roomRuntime)
+    implementation(libs.androidxRoom.roomKtx)
+    implementation(libs.androidxRoom.roomPaging)
+    ksp(libs.androidxRoom.roomCompiler)
+    testImplementation(libs.androidxRoom.roomTesting)
+
     implementation(libs.androidxNavigation.navigationCompose)
     implementation(libs.androidxCore.coreKtx)
     implementation(libs.androidxLifecycle.lifecycleRuntimeKtx)
